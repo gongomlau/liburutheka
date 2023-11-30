@@ -1,0 +1,192 @@
+/* Hoja de estilos general de nuestro sitio web */
+
+/* Enlazar hojas de estilo externas que se vayan a usar */
+@import "normalize.css";
+
+/* Especificamos las fuentes que vamos a usar */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  background-color: whitesmoke;
+  color: rgb(90, 90, 90);
+  font-family: "Poppins";
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h2, h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 1em;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+	color: grey; 
+}
+
+a:hover {
+  text-decoration: none;
+	color: lightgrey; 
+}
+
+header, footer{
+  background: #1F618D;
+  color:white;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+/* Estilos del menú de navegación */
+
+nav {
+	background-color: #A9CCE3;
+  width: 100%;
+}
+nav ul {
+	/* Para posicionar la lista en una fila */
+  display: flex;
+	flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  padding: 1em;
+  }
+
+nav li a:link,  nav li a:visited {
+	text-decoration: none;
+	color: white;
+  padding: 1em;
+  }
+
+nav li a:hover {
+  background-color: #1F618D;
+}
+/*Estilos para el contenedor y diferentes items */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 1vw;
+}
+
+.itembasico {
+  flex-basis:content;
+  background: white;
+  border-radius: 20px;
+  font-size: 0.75em;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1vw; 
+}
+
+.itembotonera {
+  
+  align-items: stretch;
+  background: #A9CCE3;
+  border-radius: 20px;
+  align-content: center;
+  padding:3.5em 8em;
+}
+
+.itembotonera a {
+  text-decoration: none;
+  color: white; 
+}
+
+/* Uso de las pseudoclase :hover para cambiar los atributos al pasar por encima con el raton*/
+.itembotonera:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #1F618D;
+}
+
+.itemcuadrado {
+  color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 1vw;
+  padding:3em 3em;
+  display:block;
+}
+
+.itemcuadrado a {
+  color: white;
+}
+
+.itempie {
+  flex-basis:auto;
+  justify-content: space-evenly;
+  font-size: 0.75em;
+  padding: 2em;
+}
+
+.libros {
+  text-align: center;
+  max-height: 300px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
+
+.logo {
+  max-height: 100px;
+}
+
+.negrita {
+  font-weight: bold;
+  color: #1F618D;
+}
+
+.piedepagina {
+  font-size: 0.6em;
+}
+/*Estilos para personalizar la letra capital de un parrafo*/
+.letracapital {
+  float:left;
+  color:#148F77;
+  font-size:75px;
+  line-height:60px;
+  padding-top:4px;
+  padding-right:8px;
+  padding-left:3px
+}
+.color06 {
+  background-color: #1f618d;
+}
+.color06:hover {
+  background-color: #4a9fd7;
+}
+.color79 {
+  background-color: #922b21;
+}
+.color79:hover {
+  background-color: #d85d51;
+}
+.color1012 {
+  background-color:#148F77;
+}
+.color1012:hover {
+  background-color:#19b194;
+}
+.color12 {
+  background-color: #F1C40F;
+}
+.color12:hover {
+  background-color: #f6db6c;
+}
+.color16 {
+  background-color: #FFD700;
+}
+.color16:hover {
+  background-color: #ffe34e;
+}
+.coloradulto{
+  background-color: grey;
+}
+.coloradulto:hover{
+  background-color: lightgrey;
+}
